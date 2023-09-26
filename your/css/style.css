@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: clip;
+}
+body{
+    height: 100%;
+    min-width: 24.375rem;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+}
+
+.wrapper{
+    min-height: 100%;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    width: 16.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    margin: 0 auto;
+    border-radius: 0.375rem;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(27, 68, 91, 0.25);
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.card__top-promotion {
+    display: flex;
+    padding: 0.375rem 0.5rem;
+    align-items: flex-start;
+    border-radius: 0.375rem;
+    background: #E42828;
+    color: #FFF;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.card__top-icons {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.card__img{
+    margin-bottom: 1.25rem;
+}
+
+.card__title-text {
+    text-overflow: ellipsis;
+    color: #161616;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.card__rating {
+    display: flex;
+    padding: 0.625rem 0;
+    align-items: center;
+    align-self: stretch;
+}
+.rating {
+    margin-bottom: 0.625rem;
+}
+.rating__container {
+    margin-right: 0.375rem;
+    padding: 0.625rem 0;
+}
+.rating__icons {
+    display: flex;
+    gap: 0.0625rem;
+}
+.rating__reviews {
+    color: #797979;
+    font-size: 0.75rem;
+}
+.rating__reviews-sum::after{
+    content: "відгуків";
+    padding: 0.125rem;
+}
+
+.card__buy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+.card__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__price-discount {
+    color: #797979;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+.card__price-discount::after {
+    content: "грн.";
+    padding-left: 0.1875rem;
+}
+.card__price-common {
+    color: #E42828;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.card__price-common::after {
+    content: "грн.";
+    padding-left: 0.1875rem;
+}
+.card__buy-btn {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.75rem 1.5rem 0.875rem 1.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.375rem;
+    background: #56AA36;
+    border: none;
+}
+
+.card__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+[class*="info__"]{
+    color: #797979;
+    display: flex;
+    justify-content: space-between;
+}
+[class*="-data"]{
+    color: #161616;
+}
+
+@media (max-width:24.375rem){
+        .card__container {
+        display: flex;
+        flex-direction: column;
+        width: 10.875rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+    }
+    .card__img{
+        margin-top: 0.625rem;
+        margin-bottom: 0.5rem;
+    }
+    .card__img img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .card__title {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .rating{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .card__buy {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .card__info{
+        display: none;
+    }
+}
